@@ -11,7 +11,7 @@ rule plot_results:
     conda:
         "../envs/ewas.yaml"
     shell:
-        f"""
+        """
         Rscript {{input.script}} \
         --input-file {{input.in_file}} \
         --out-dir {{params.o_dir}} \

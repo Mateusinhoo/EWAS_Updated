@@ -33,7 +33,7 @@ rule run_dmr:
     conda:
         "../envs/dmr.yaml"
     shell:
-        f"""
+        """
         comb-p pipeline \
 		--seed {{params.min_p}} \
 		--dist {{params.win_sz}} \
